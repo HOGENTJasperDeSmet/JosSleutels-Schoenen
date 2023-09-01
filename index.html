@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>schoen- & slotenmakerij Jos</title>
+    <link rel="icon" href="images/titlekey.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/Jos.css">
+    <script type="text/javascript" src="stylesheets/jquery.js"></script>
+    <script type="text/javascript" src="stylesheets/Jos.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/Banner.jpg" alt="Schoen en sleutelmakerij Jos" title="Schoen en sleutelmakerij Jos" />
+        <nav>
+            <a class="active">Start
+            </a><a href="Schoenmakerij.html">Schoenmakerij
+            </a><a href="Sleutels.html">Sleutels
+            </a><a href="Nummerplaten.html">Nummerplaten
+            </a><a href="Onderhoudsproducten.html">Onderhoudsproducten
+            </a><a href="Slotenmakerij.html">Slotenmakerij
+            </a><a href="Overige.html">Overige
+            </a><a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="mainHoofdpagina">
+        <div id="map"></div>
+        <div class="startrechts">
+            <h2>Openingsuren:</h2>
+            <article>
+                <p>Maandag gesloten</p>
+                <p>Dinsdag 08:30 - 12:00 | 13:30 - 18:30</p>
+                <p>Woensdag 08:30 - 12:00 | 13:30 - 18:30</p>
+                <p>Donderdag gesloten</p>
+                <p>Vrijdag 08:30 - 12:00 | 13:30 - 18:30</p>
+                <p>Zaterdag 09:00 - 12:00 | 13:30 - 17:00</p>
+                <p>Zondag gesloten</p>
+            </article>
+        </div>
+        <div id="openingsuren">
+            <div id="timeDiv"></div>
+            <label class="viewOpen" for="modal-state">~ Openingsuren ~</label>
+            <input type="checkbox" name="modal-state" id="modal-state">
+            <div class="modal-overlay">
+                <label for="modal-state" class="modal-overlay-close"></label>
+                <div class="modal">
+                    <label class="button-close" for="modal-state">X</label>
+                    <h2>openingsuren:</h2>
+                    <div id="Maandag" class="dateTime">
+                        <div class="day">Maandag</div>
+                        <div class="time">gesloten</div>
+                    </div>
+                    <br>
+                    <div id="Dinsdag" class="dateTime">
+                        <div class="day">Dinsdag</div>
+                        <div class="time">08:30 - 12:00 | 13:30 - 18:30</div>
+                    </div>
+                    <br>
+                    <div id="Woensdag" class="dateTime">
+                        <div class="day">Woensdag</div>
+                        <div class="time">08:30 - 12:00 | 13:30 - 18:30</div>
+                    </div>
+                    <br>
+                    <div id="Donderdag" class="dateTime">
+                        <div class="day">Donderdag</div>
+                        <div class="time">gesloten</div>
+                    </div>
+                    <br>
+                    <div id="Vrijdag" class="dateTime">
+                        <div class="day">Vrijdag</div>
+                        <div class="time">08:30 - 12:00 | 13:30 - 18:30</div>
+                    </div>
+                    <br>
+                    <div id="Zaterdag" class="dateTime">
+                        <div class="day">Zaterdag</div>
+                        <div class="time">09:00 - 12:00 | 13:30 - 17:00</div>
+                    </div>
+                    <br>
+
+
+                    <div id="Zondag" class="dateTime">
+                        <div class="day">Zondag</div>
+                        <div class="time">gesloten</div>
+                    </div>
+                </div>
+            </div><a name="cg"></a>
+        </div>
+    </main>
+</body>
+<script>
+    function initMap() {
+        var opwijk = { lat: 50.97125316, lng: 4.18775428 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: opwijk
+        });
+        var marker = new google.maps.Marker({
+            position: opwijk,
+            map: map
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN5vdhZ1SYhPiF9Zhq_cJ5cKdhO6sLU0w&callback=initMap">
+    </script>
+
+</html>

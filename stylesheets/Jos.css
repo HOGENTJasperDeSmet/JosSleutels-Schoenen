@@ -1,0 +1,385 @@
+body {
+  background-color: #a1cbdb;
+  font-family: "Proxima Nova Soft", "Helvetica Neue", sans-serif;
+}
+header {
+  width: 100%;
+  z-index: 2;
+  background-color: #e983a0;
+}
+header img {
+  width: 100%;
+}
+.nav-placeholder {
+  top: 0;
+}
+nav {
+  background-color: #e983a0;
+  padding-left: 9%;
+  box-shadow: 0 5px 3px #666666;
+}
+nav a {
+  padding: 0.7% 0.8%;
+  display: inline-block;
+}
+nav a:hover,
+.active {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  width: 75%;
+  margin: 0.5% auto;
+  box-shadow: 1px 2px 5px #666666;
+  padding: 3%;
+  background-color: white;
+  z-index: 1;
+  gap: 10px;
+  justify-content: center;
+}
+.mainHoofdpagina {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 75%;
+  margin: 0.5% auto;
+  box-shadow: 1px 2px 5px #666666;
+  padding: 3%;
+  background-color: white;
+  z-index: 1;
+  gap: 10px;
+  justify-content: center;
+}
+section {
+  height: calc(100vw / 50vh);
+  width: calc((100vw / 6.4) * 1.5);
+  padding: 10px;
+}
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 5px ridge #dfdfdf;
+}
+h3 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1% 0 3% 0;
+}
+h4 {
+  padding-top: 10px;
+  font-size: 1.4rem;
+  text-align: right;
+}
+ul {
+  margin: 10px 0 0 20px;
+}
+li {
+  list-style: square;
+  padding: 5px;
+}
+img[alt="herstellingen"] {
+  width: 50%;
+  box-shadow: 5px 10px 8px #888888;
+}
+img[alt="sleutels"] {
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+  box-shadow: 5px 10px 8px #888888;
+}
+img[alt="vraagteken"] {
+  width: 15px;
+  height: 15px;
+}
+img[alt="vierkante nummerplaat"],
+img[alt="rechthoekige nummerplaat"] {
+  height: calc(100vw / 4.5);
+  margin-top: 10px;
+  float: right;
+  box-shadow: 5px 10px 8px #888888;
+  margin-left: 10px;
+}
+img[alt="onderhoudsproducten"],
+img[alt="baterijen"],
+img[alt="sleutelhangers"],
+img[alt="accessoires"] {
+  height: calc(100vw / 6.4);
+  margin: 10px 0 0 10px;
+  box-shadow: 5px 10px 8px #888888;
+}
+img[alt="sloten"],
+img[alt="hangsloten"] {
+  margin-top: 10px;
+  height: calc(100vw / 7);
+}
+p {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+#nummerplaten p {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 40px 30px 20px 0;
+}
+#login {
+  width: 40%;
+  margin: 10% auto;
+  box-shadow: none;
+  padding: 0;
+  background-color: transparent;
+}
+.login {
+  width: 100%;
+  height: 50px;
+  border: 1px solid cornflowerblue;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+#admin {
+  width: 80%;
+  box-shadow: none;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+#admin article {
+  width: 30vw;
+  margin: 3%;
+  box-shadow: 1px 2px 5px #666666;
+  padding: 3%;
+  background-color: white;
+  z-index: 1;
+}
+#admin article input[type="text"],
+[type="date"],
+[type="password"] {
+  width: 100%;
+  margin: 1% 0 1% 0;
+}
+.button {
+  border-radius: 20px;
+  text-shadow: 2px 3px 3px #666666;
+  -webkit-box-shadow: 2px 1px 3px #666666;
+  -moz-box-shadow: 2px 1px 3px #666666;
+  box-shadow: 2px 1px 3px #666666;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background: #e983a0;
+  padding: 10px 20px 10px 20px;
+  float: right;
+}
+.button:hover {
+  background: #ed97b1;
+  cursor: pointer;
+}
+.button1 {
+  border-radius: 13px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #e983a0;
+  padding: 10px;
+  border: dotted #000000 1px;
+  text-decoration: none;
+}
+.button1:hover {
+  background: #00ff00;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button2 {
+  border-radius: 13px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #e983a0;
+  padding: 10px;
+  border: dotted #000000 1px;
+  text-decoration: none;
+  float: right;
+}
+.button2:hover {
+  background: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+#map {
+  height: 400px;
+  width: 50%;
+  float: left;
+  z-index: 1;
+}
+#openingsuren {
+  width: 100%;
+  text-align: center;
+}
+.startrechts {
+  width: 45%;
+  border: 5px ridge #dfdfdf;
+}
+.startrechts article {
+  padding: 3px 5px;
+  margin: 5px;
+}
+#timeDiv {
+  text-transform: uppercase;
+  position: relative;
+  max-width: 375px;
+  background: #fff;
+  width: 85%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px -8px #abaaba;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 350px;
+}
+.open {
+  color: #27ae60;
+  border: 2px solid #27ae60;
+}
+.closed {
+  color: rgba(231, 76, 60, 0.85);
+  border: 2px solid rgba(231, 76, 60, 0.8);
+}
+.viewOpen {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid rgba(70, 70, 70, 0.7);
+  max-width: 170px;
+  background: #fff;
+  width: 100%;
+  color: rgba(70, 70, 70, 0.8);
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 8px 16px -8px #adadad;
+  cursor: pointer;
+}
+.dateTime {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.day {
+  display: inline-block;
+  float: left;
+}
+.time {
+  display: inline-block;
+  float: right;
+}
+.today {
+  color: rgb(200, 85, 39);
+  font-weight: 600;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(173, 173, 173, 0.5);
+  display: none;
+  z-index: 3;
+}
+#modal-state {
+  display: none;
+}
+#modal-state:checked + .modal-overlay {
+  opacity: 1;
+  animation: fade-in 0.8s;
+  display: block;
+}
+.modal-overlay-close {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.modal {
+  position: absolute;
+  margin: 0 auto;
+  padding: 45px 30px;
+  background: #fff;
+  right: 0;
+  left: 0;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  line-height: 1.8;
+}
+.modal h2 {
+  margin-top: 0;
+  line-height: 25px;
+  font-size: 22px;
+  border-bottom: 1px solid #dce0d8;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+#modal-state:checked + .modal-overlay .modal {
+  top: 25%;
+}
+.button-close {
+  float: right;
+  top: 0;
+  color: black;
+  padding: 0 7px;
+  right: 0;
+  cursor: pointer;
+}
+#schoenmakerijrechts {
+  float: right;
+  width: 45%;
+  padding-left: 4%;
+}
+#sleutelsrechts {
+  width: 30%;
+  padding-left: 4%;
+}
+#sleutelcontainer {
+  display: flex;
+}
+#nummerplaten {
+  display: flex;
+  justify-content: space-around;
+}
+#onderhoudsproducten {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#slogan {
+  border: 4px dotted black;
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 20px;
+  -webkit-transform: rotate(345deg);
+  -moz-transform: rotate(345deg);
+  box-shadow: 5px 10px 8px #888888;
+}
