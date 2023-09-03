@@ -45,15 +45,7 @@ jQuery(document).ready(function () {
         timeDiv.innerHTML = 'Het is ' + today + ' ' + hour + ':' + minutes + ' - we zijn open!';
         timeDiv.className = 'open';
     }
-    else if ((dayOfWeek === 6) && hour >= 9 && hour < 12 && timeDiv.className !== 'closed') {
-        timeDiv.innerHTML = 'Het is ' + today + ' ' + hour + ':' + minutes + ' - we zijn open!';
-        timeDiv.className = 'open';
-    }
-    else if ((dayOfWeek === 6) && hour === 13 && minutes >= 30 && timeDiv.className !== 'closed') {
-        timeDiv.innerHTML = 'Het is ' + today + ' ' + hour + ':' + minutes + ' - we zijn open!';
-        timeDiv.className = 'open';
-    }
-    else if ((dayOfWeek === 6) && hour >= 14 && hour < 17 && timeDiv.className !== 'closed') {
+    else if ((dayOfWeek === 6) && hour >= 9 && hour < 15 && timeDiv.className !== 'closed') {
         timeDiv.innerHTML = 'Het is ' + today + ' ' + hour + ':' + minutes + ' - we zijn open!';
         timeDiv.className = 'open';
     }
