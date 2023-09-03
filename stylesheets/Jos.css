@@ -5,22 +5,23 @@ body {
 header {
   width: 100%;
   z-index: 2;
+
   background-color: #e983a0;
 }
 header img {
   width: 100%;
 }
-.nav-placeholder {
-  top: 0;
-}
 nav {
   background-color: #e983a0;
   padding-left: 9%;
+  display: flex;
   box-shadow: 0 5px 3px #666666;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 nav a {
   padding: 0.7% 0.8%;
-  display: inline-block;
 }
 nav a:hover,
 .active {
@@ -34,7 +35,7 @@ main {
   width: 75%;
   margin: 0.5% auto;
   box-shadow: 1px 2px 5px #666666;
-  padding: 3%;
+  padding: 2%;
   background-color: white;
   z-index: 1;
   gap: 10px;
@@ -47,7 +48,7 @@ main {
   width: 75%;
   margin: 0.5% auto;
   box-shadow: 1px 2px 5px #666666;
-  padding: 3%;
+  padding: 2%;
   background-color: white;
   z-index: 1;
   gap: 10px;
@@ -298,7 +299,7 @@ p {
 }
 .modal-overlay {
   position: fixed;
-  top: 45px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
